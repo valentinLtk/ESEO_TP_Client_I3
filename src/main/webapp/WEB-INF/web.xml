@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+		 id="WebApp_ID" 
+		 version="4.0">
+ 	
+ 	<display-name>ESEO_TP_Client_I3</display-name>
+	
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>servlets.HomeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetVilleServlet</servlet-name>
+		<servlet-class>servlets.GetVilleServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetVilleServlet</servlet-name>
+		<url-pattern>/getVille</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditVilleServlet</servlet-name>
+		<servlet-class>servlets.EditVilleServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EditVilleServlet</servlet-name>
+		<url-pattern>/editVille</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetDistanceServlet</servlet-name>
+		<servlet-class>servlets.GetDistanceServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetDistanceServlet</servlet-name>
+		<url-pattern>/getDistance</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
